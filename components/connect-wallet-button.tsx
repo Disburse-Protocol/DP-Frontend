@@ -1,9 +1,18 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type ComponentProps } from "react";
 import { connectFreighter } from "@/lib/freighter";
+import { Button } from "@/components/ui/button";
 
-export function ConnectWalletButton() {
+export function ConnectWalletButton({
+  label = "Connect Wallet",
+  size = "default",
+  className,
+}: {
+  label?: string;
+  size?: ComponentProps<typeof Button>["size"];
+  className?: string;
+}) {
   const [error, setError] = useState<string | null>(null);
 
   async function handleClick() {
@@ -16,13 +25,10 @@ export function ConnectWalletButton() {
 
   return (
     <div className="flex flex-col items-center gap-2">
-      <button
-        onClick={handleClick}
-        className="rounded-full bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc]"
-      >
-        Connect Wallet
-      </button>
-      {error && <p className="text-xs text-red-500">{error}</p>}
+      <Button size={size} className={className} onClick={handleClick}>
+        {label}
+      </Button>
+      {error && <p className="text-xs text-destructive">{error}</p>}
     </div>
   );
 }
