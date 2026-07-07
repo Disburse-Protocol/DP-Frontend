@@ -4,7 +4,7 @@ Employer dashboard and employee portal for Disburse Protocol — a decentralized
 
 ## Architecture
 
-Full page list, data flow, and write-path examples are documented in [contracts/ARCHITECTURE.md](https://github.com/stellarpay-protocol/contracts/blob/main/ARCHITECTURE.md).
+Full page list, data flow, and write-path examples are documented in [contracts/ARCHITECTURE.md](https://github.com/Disburse-Protocol/DP-Contracts/blob/main/ARCHITECTURE.md).
 
 ## Tech Stack
 
@@ -22,7 +22,7 @@ Full page list, data flow, and write-path examples are documented in [contracts/
 ## Local Setup
 
 ```bash
-git clone https://github.com/stellarpay-protocol/frontend.git
+git clone https://github.com/Disburse-Protocol/DP-Frontend.git
 cd frontend
 pnpm install
 cp .env.example .env.local   # set backend URL and contract addresses
@@ -30,6 +30,17 @@ pnpm dev
 ```
 
 Visit `http://localhost:3000`.
+
+### Testnet Contract Addresses
+
+Source of truth: [contracts README](https://github.com/Disburse-Protocol/DP-Contracts#testnet-addresses).
+
+| Contract | Address |
+|---|---|
+| Org Registry | `CDQR5XCOVELSUKLEWSV2EKTS2P2DPBV5BVCKWEWAS2DZBFZJRGCBAF72` |
+| Payroll | `CD7Q6EOD7XOW2N7ASF3PZJ5QUKKSSGWBKQPUQUD6GLMAQRDXIO2WR54S` |
+| Vesting | `CDQWGKBSUVL2TORZMLDVWBDNI4QP366PFCG5LGYGZHCUEMJAADGPK72Y` |
+| Test USDC token | `CDLGHX4OJH65EA7CEMBDJCR5L5WCF2O65YMJYCDP2VQPGSXQVCIHMMLQ` |
 
 ## Testing
 
@@ -43,8 +54,8 @@ Deployed to Vercel. Set the same environment variables as `.env.example` in the 
 
 ## Related Repos
 
-- [contracts](https://github.com/stellarpay-protocol/contracts) — Soroban smart contracts (source of truth)
-- [backend](https://github.com/stellarpay-protocol/backend) — chain indexer and query API
+- [contracts](https://github.com/Disburse-Protocol/DP-Contracts) — Soroban smart contracts (source of truth)
+- [backend](https://github.com/Disburse-Protocol/DP-Backend) — chain indexer and query API
 
 ## Contributing
 

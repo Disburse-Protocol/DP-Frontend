@@ -1,6 +1,6 @@
 # Contributing to Disburse Protocol Frontend
 
-Thanks for your interest in contributing. This repo is the Next.js employer dashboard and employee portal for Disburse Protocol. It reads from the backend indexer (falling back to direct Soroban RPC reads) and writes directly to contracts via Freighter — see the [contracts repo's ARCHITECTURE.md](https://github.com/stellarpay-protocol/contracts/blob/main/ARCHITECTURE.md) for the full page list, data flow, and write-path examples this repo implements.
+Thanks for your interest in contributing. This repo is the Next.js employer dashboard and employee portal for Disburse Protocol. It reads from the backend indexer (falling back to direct Soroban RPC reads) and writes directly to contracts via Freighter — see the [contracts repo's ARCHITECTURE.md](https://github.com/Disburse-Protocol/DP-Contracts/blob/main/ARCHITECTURE.md) for the full page list, data flow, and write-path examples this repo implements.
 
 ## Branching Strategy
 
